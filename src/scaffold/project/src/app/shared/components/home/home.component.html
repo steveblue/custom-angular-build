@@ -1,0 +1,7 @@
+<div class="icon__container is--center has--pers">
+    <a [routerLink]="['away']" class="app__icon">
+        <img src="./assets/ng2-stealth.png"
+        [ngClass]="{'is--active' : stealthMode === 'active',
+                    'is--inactive' : stealthMode === 'inactive'}">
+    </a>
+</div>
