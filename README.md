@@ -30,7 +30,7 @@ async/await is used in this build script, you will need to have node > 8.0.0 and
 
 ### Java SE Development Kit 8
 
-You will learn how to bundle Angular apps with Closure Compiler in this workshop. Closure Compiler requires the Java JDK to be installed. You can find installs for your machine [here](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
+You will learn how to bundle Angular apps with Closure Compiler in this workshop. Closure Compiler requires the Java JDK to be installed. [Download and Install Java JDK from Oracle](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
 
 If you do not have these installed, you can still follow along with the repository and get something out of the workshop. For the best experience possible install these prerequisties prior to the workshop.
 
