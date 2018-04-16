@@ -4,6 +4,18 @@ This is starter code for the Writing A Custom Angular Build workshop at ng-conf 
 
 The workshop is on Fair Day Thursday April 19 from 12 - 2pm in the Murano room.
 
+
+## What Will You Learn?
+
+- Use nodejs to script an Angular build
+- How to build for Angular 6.0.0
+- Run a development environment with the AOT compiler in --watch mode
+- Optimize Angular app with Closure Compiler for production
+- Optimize the build process with parallel async tasks using async / await
+- Manage files in the build process
+- Ensure the build is cross platform compatible
+
+
 ## Getting Started
 
 1. Clone this repo (`git clone https://github.com/steveblue/custom-angular-build.git`) and run `npm install`
@@ -14,7 +26,7 @@ To get the most out of this workshop, you must have node and the Java SE Develop
 
 ### node > 8.0.0 && < 9.0.0
 
-To get the most out of this workshop, you will need to have node > 8.0.0 and < 9.0.0 installed.
+async/await is used in this build script, you will need to have node > 8.0.0 and < 9.0.0 installed.
 
 ### Java SE Development Kit 8
 
@@ -53,6 +65,7 @@ In the workshop there will be code alongs and code challenges where you will be 
 - ngc
 - closure compiler
 - next
+- q&a
 ```
 
 
@@ -77,10 +90,13 @@ master
 6/closure
 ```
 
-
 ## Does It Work In Windows?
 
 Yes. I took special care to ensure this workshop will cover cross platform compatibility. Just make sure you have node > 8.0.0 and < 9.0.0 and the Java JDK installed.
+
+## Who Is Telling Me This?
+
+Steve Belovarich has been writing custom builds for Angular since it was in Alpha. He administers the angular-rollup project, an alternative cli that uses Rollup and Closure Compiler to bundle and optimize Angular applications. When Steve was a teenager, he ran a small web business out of his room and ever since has been hooked on web development. When he isn’t developing UI components at Symantec, you may find him exhibiting net based artwork or teaching web development.
 
 
 
