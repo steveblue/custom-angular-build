@@ -2,7 +2,7 @@
 
 This is starter code for the Writing A Custom Angular Build workshop at ng-conf 2018.
 
-The workshop is on Fair Day Thursday April 19 from 12 - 2pm in the Murano room.
+The workshop is on Fair Day Thursday April 19 from 12 - 1:50pm in the Murano room.
 
 
 ## What Will You Learn?
