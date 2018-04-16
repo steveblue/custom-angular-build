@@ -67,10 +67,29 @@ class Build {
 
     compile() {
 
-        return new Promise((res) => {
-            console.log('💥 ','ngc started');
-            res();
-        })
+        console.log('ngc started');
+
+        if (this.program.build === 'dev' && this.program.watch) {
+
+            let ngc = spawn(path.join(this.projectRoot, 'node_modules', '.bin', 'ngc'),
+                      ['-p', 'tsconfig.'+this.program.build+'.json', '--watch'],
+                      {stdio: 'inherit'});
+
+        } else {
+            return new Promise((res) => {
+                exec(path.join(this.projectRoot, 'node_modules', '.bin', 'ngc')+ ' '+
+                    '-p tsconfig.'+this.program.build+'.json',
+                    {silent: true}, (error, stdout, stderr) => {
+                    if (stderr) {
+                        console.log(stderr);
+                    } else {
+                        console.log('Compilation complete.');
+                        res();
+                    }
+                });
+
+            });
+        }
 
     }
 
