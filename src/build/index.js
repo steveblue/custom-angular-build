@@ -57,10 +57,11 @@ class Build {
 
     formatIndex(template) {
 
-        console.log('💥 ', 'format template');
-        return new Promise((res) => {
-            res();
-        });
+        console.log('format template');
+        return exec(path.join(this.projectRoot, path.normalize('node_modules/.bin/htmlprocessor'))+' '+
+                    template+' '+
+                    '-o '+ path.join('build', 'index.html')+' '+
+                    '-e '+ this.program.build);
 
     }
 
