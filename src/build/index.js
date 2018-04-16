@@ -22,14 +22,11 @@ class Build {
 
     copyDir(src, dist) {
 
-        return new Promise((res) => {
-            console.log('💥 ', 'copy', path.basename(src));
-            res();
-        });
-        // if (!fs.existsSync(dist)) shell.mkdir('-p', dist);
-        // return shell.cp('-R',
-        //                 path.normalize(src + '/*'),
-        //                 path.normalize(path.join(dist, '/')));
+        if (!fs.existsSync(dist)) shell.mkdir('-p', dist);
+        console.log('copy', path.basename(src));
+        return shell.cp('-R',
+                        path.normalize(src + '/*'),
+                        path.normalize(path.join(dist, '/')));
 
     }
 
@@ -38,8 +35,14 @@ class Build {
         const outFile = path.join(dist, filePath);
 
         return new Promise((res) => {
-            console.log('💥 ', 'copy', filePath);
-            res();
+            if (!fs.existsSync(outFile)) {
+                if (!fs.existsSync(path.dirname(outFile))) {
+                    shell.mkdir('-p', path.dirname(outFile));
+                }
+                console.log('copy', filePath);
+                shell.cp('-R', path.join('node_modules', filePath), outFile);
+                res();
+            }
         });
 
     }
