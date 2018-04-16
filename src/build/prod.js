@@ -28,9 +28,14 @@ class ProdBuild extends Build {
 
     bundle() {
 
-        return new Promise((res) => {
-            console.log('💥 ','Closure Compiler started');
-            res();
+        let cmd = 'java -jar node_modules/google-closure-compiler/compiler.jar '+
+        '--flagfile closure.conf '+
+        '--js_output_file ./build/bundle.js';
+
+        console.log('Closure Compiler started');
+
+        return exec(cmd, {}, () => {
+            console.log('Closure Compiler finished');
         })
 
     }
