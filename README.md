@@ -50,7 +50,6 @@ ngs scaffold
 ngs build dev
 ngs build dev --watch
 ngs build prod
-
 ```
 
 ## How Does This Work?
@@ -94,7 +93,7 @@ master
 
 Yes. I took special care to ensure this workshop will cover cross platform compatibility. Just make sure you have node > 8.0.0 and < 9.0.0 and the Java JDK installed.
 
-## Who Is Telling Me This?
+## Who Is Running The Workshop?
 
 Steve Belovarich has been writing custom builds for Angular since it was in Alpha. He administers the angular-rollup project, an alternative cli that uses Rollup and Closure Compiler to bundle and optimize Angular applications. When Steve was a teenager, he ran a small web business out of his room and ever since has been hooked on web development. When he isn’t developing UI components at Symantec, you may find him exhibiting net based artwork or teaching web development.
 
