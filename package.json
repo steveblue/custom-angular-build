@@ -28,6 +28,9 @@
     "htmlprocessor": "^0.2.6",
     "shelljs": "^0.8.1"
   },
+  "bin": {
+    "ngs": "index.js"
+  },
   "engines": {
     "node": ">8.0.0 <9.0.0"
   }
