@@ -43,6 +43,8 @@ ngs build prod
 
 ## How Does This Work?
 
+In the workshop there will be code alongs and code challenges where you will be asked to write tasks for the build to complete. You will code portions of the build in the following order.
+
 ```
 - getting started
 - cli
@@ -60,7 +62,7 @@ If you get behind, no worries! I've got ya convered. Stash your changes and then
 
 ```bash
 git stash
-git checkout 4/cli
+git checkout 4/template
 ```
 
 ## Branches
@@ -78,7 +80,7 @@ master
 
 ## Does It Work In Windows?
 
-Yes, I took special care to ensure the final code will be cross platform compatible. Just make sure you have node > 8.0.0 and < 9.0.0 and the Java JDK installed.
+Yes. I took special care to ensure this workshop will cover cross platform compatibility. Just make sure you have node > 8.0.0 and < 9.0.0 and the Java JDK installed.
 
 
 
