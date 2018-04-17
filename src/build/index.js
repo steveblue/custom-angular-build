@@ -55,9 +55,22 @@ class Build {
     formatIndex(template) {
 
         console.log('💥 ', 'format template');
+
         return new Promise((res) => {
             res();
         });
+
+        // simple implementation of exec calling htmlprocessor to format index.html
+        // return exec('node_modules/.bin/htmlprocessor'+' '+
+        //             template+' '+
+        //             '-o build/index.html'+' '+
+        //             '-e '+ this.program.build);
+
+        // cross platform implementation of exec calling htmlprocessor to format index.html
+        // return exec(path.join(this.projectRoot, path.normalize('node_modules/.bin/htmlprocessor'))+' '+
+        //             template+' '+
+        //             '-o '+ path.join('build', 'index.html')+' '+
+        //             '-e '+ this.program.build);
 
     }
 
